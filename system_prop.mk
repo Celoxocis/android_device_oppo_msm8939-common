@@ -85,3 +85,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable QMI logspam
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.qmi.adb_logmask=0
+
+# Disable Scrolling Cache For Faster Scrolling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.scrollingcache=3
+
+# Better Scrolling responsiveness and speed
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.max.fling_velocity=12000 \
+    ro.min.fling_velocity=8000
